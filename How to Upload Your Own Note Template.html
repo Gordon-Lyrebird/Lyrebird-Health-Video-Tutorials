@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Upload Your Own Note Template</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .instructions {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        .instructions li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 45px;
+            position: relative;
+        }
+        .instructions li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .note {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .video-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Upload Your Own Note Template</h1>
+        
+        <div class="video-container">
+            <iframe src="https://www.loom.com/embed/a7cde0eaab0b48a89e0794d4cbc20b6c?sid=4bb868bb-75fc-440f-9aa3-512b864f73d4" allowfullscreen></iframe>
+        </div>
+
+        <h2>Step-by-Step Instructions</h2>
+        
+        <div class="note">
+            <strong>Overview:</strong> Lyrebird has three standard templates (SOAP notes, chief complaint, and multiple complaints), but you can create your own custom template based on your preferred note structure. This saves time by eliminating the need to re-order sections after each consultation.
+        </div>
+
+        <ol class="instructions">
+            <li>Take a set of clinical notes you've written in the past that follow your preferred structure and paste them into a Word document.</li>
+            
+            <li>Download the Word document as a PDF file. This will be used as your template example.</li>
+            
+            <li>In Lyrebird, navigate to <strong>Customize</strong> → <strong>Note Templates</strong> → <strong>Create New Note Template</strong>.</li>
+            
+            <li>Select <strong>Upload an Example</strong> and choose the PDF file you prepared earlier.</li>
+            
+            <li>Click <strong>Open and Generate</strong>. Lyrebird will analyze your document and create a template based on your preferred structure.</li>
+            
+            <li>Once the note has been generated, give your template a descriptive name (e.g., "Problem + Treatment Plan Format").</li>
+            
+            <li>Click <strong>Next</strong> and specify when this template will be used (e.g., for both initial and review appointments).</li>
+            
+            <li>Add a brief description of your template structure (e.g., "Problem followed by treatment plan").</li>
+            
+            <li>Review the sections and rules that Lyrebird has automatically created based on your uploaded example. Lyrebird will have identified the structure and created rules without you having to write them manually.</li>
+            
+            <li>Edit any sections as needed. You can customize each section and advise Lyrebird to adjust the template to your specific preferences.</li>
+            
+            <li>Click <strong>Save and Exit</strong>. Your new template will now appear in the Note Templates section under "Personal".</li>
+            
+            <li>To make this your default template, go to <strong>General Settings</strong> and set it as your default. This means when you start a consultation, it will automatically use your preferred template structure.</li>
+        </ol>
+        
+        <div class="note">
+            <strong>Key Benefits:</strong> Lyrebird remembers your preferred structure and automatically formats your notes accordingly, eliminating the need to re-order sections after each consultation. All rules and prompts are created automatically based on your example.
+        </div>
+    </div>
+</body>
+</html>

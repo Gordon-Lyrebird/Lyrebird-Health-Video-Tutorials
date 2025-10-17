@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Write Documents with Lyrebird</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .instructions {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        .instructions li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 45px;
+            position: relative;
+        }
+        .instructions li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .note {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .example {
+            background: #f0f0f0;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        .tip {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .highlight {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .video-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Write Documents With Lyrebird</h1>
+        
+        <div class="video-container">
+            <iframe src="https://www.loom.com/embed/214b58647c85430f8feab9846043d124?sid=95465680-bc08-41c3-a62e-9bd7e7b7eb4b" allowfullscreen></iframe>
+        </div>
+
+        <h2>Step-by-Step Instructions</h2>
+        
+        <div class="note">
+            <strong>Overview:</strong> Lyrebird can generate various types of correspondence and documents based on your clinical notes, including letters to referring clinicians, specialist referrals, and PDFs with fillable fields (such as medical certificates). The system pulls relevant information from your consultation transcript to create targeted, specific documents.
+        </div>
+
+        <ol class="instructions">
+            <li>After completing your consultation and clinical notes, click <strong>Write Document</strong> to begin creating correspondence.</li>
+            
+            <li>Browse the <strong>pre-made templates</strong> provided by Lyrebird. These templates cover common document types clinicians need.</li>
+            
+            <li>Select the relevant document types for your patient. For example:
+                <div style="margin-top: 10px; margin-left: 20px;">
+                    <div style="margin-bottom: 5px;">• Letter to specialist (e.g., orthopedic surgeon)</div>
+                    <div style="margin-bottom: 5px;">• Letter to endocrinologist</div>
+                    <div>• Letter to diabetes educator</div>
+                </div>
+            </li>
+            
+            <li>Scroll down to the <strong>PDF section</strong> to find fillable PDF documents such as Centrelink Medical Certificates or other standardized forms.</li>
+            
+            <li>Look for the <strong>"Made by You"</strong> section. If you prefer your letters to be in a specific structure or format, you can upload your own templates here. This ensures all generated correspondence follows your preferred style automatically.</li>
+            
+            <li>After selecting your documents, click <strong>Next</strong> to proceed. Lyrebird will generate all selected documents simultaneously.</li>
+            
+            <li>Review each generated document. Lyrebird intelligently pulls information from the consultation transcript, using only discussions and medical context relevant to each specific recipient. For example:
+                <div style="margin-top: 10px; margin-left: 20px;">
+                    <div style="margin-bottom: 5px;">• The diabetes educator letter will focus on diabetes-related discussions</div>
+                    <div style="margin-bottom: 5px;">• The orthopedic surgeon letter will emphasize musculoskeletal concerns</div>
+                    <div>• The endocrinologist letter will highlight endocrine-related information</div>
+                </div>
+            </li>
+            
+            <li>Make edits to any document as needed. You can edit within the template itself, or make specific changes to the current document only.</li>
+            
+            <li>Use natural language commands to refine documents. For example, if a letter is too wordy, you can instruct Lyrebird:
+                <div class="example">"Make more concise and have the examination in bullet points."</div>
+                Lyrebird will create a second version with your requested changes.</li>
+            
+            <li>Review fillable PDF documents (such as medical certificates). Lyrebird automatically populates all relevant sections using information from the consultation, saving you from manual data entry.</li>
+            
+            <li>Once satisfied with all documents, save or export them according to your workflow requirements.</li>
+        </ol>
+        
+        <div class="highlight">
+            <strong>Key Feature - Smart Information Extraction:</strong> Lyrebird doesn't just copy your entire clinical note into every document. Instead, it intelligently identifies which information is relevant for each specific recipient and creates targeted, appropriate correspondence for each specialist or purpose.
+        </div>
+        
+        <div class="tip">
+            <strong>Pro Tip:</strong> You can iterate on any document by giving Lyrebird specific instructions about style, length, or format. If the first version isn't quite right, simply describe what you'd like changed and Lyrebird will generate an improved version.
+        </div>
+        
+        <div class="note">
+            <strong>Document Types You Can Generate:</strong>
+            <ul style="margin-top: 10px; margin-bottom: 0;">
+                <li>Letters to referring clinicians</li>
+                <li>Specialist referral letters</li>
+                <li>Letters to allied health professionals (physiotherapists, diabetes educators, etc.)</li>
+                <li>Medical certificates (Centrelink, work certificates, etc.)</li>
+                <li>Any PDF forms with fillable fields</li>
+                <li>Custom templates you've uploaded</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
