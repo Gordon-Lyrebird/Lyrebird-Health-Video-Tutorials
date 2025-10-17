@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrebird Tutorial Library</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 32px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+        .tutorial-card {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .tutorial-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .tutorial-title {
+            color: #2c3e50;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .tutorial-description {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .tutorial-link {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .tutorial-link:hover {
+            background: #2980b9;
+        }
+        .intro {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lyrebird Tutorial Library</h1>
+        <p class="subtitle">Step-by-step video tutorials with written instructions</p>
+        
+        <div class="intro">
+            <strong>Welcome!</strong> This library contains comprehensive tutorials for using Lyrebird's key features. Each tutorial includes an embedded video demonstration alongside detailed written instructions you can follow at your own pace.
+        </div>
+
+        <div class="tutorial-card">
+            <div class="tutorial-title">1. How to Upload Your Own Note Template</div>
+            <div class="tutorial-description">
+                Learn how to create custom note templates by uploading your existing clinical notes. Lyrebird will analyze your preferred structure and automatically create templates that match your documentation style.
+            </div>
+            <a href="upload-template.html" class="tutorial-link">View Tutorial →</a>
+        </div>
+
+        <div class="tutorial-card">
+            <div class="tutorial-title">2. How to Edit Your Custom Templates in Lyrebird</div>
+            <div class="tutorial-description">
+                Refine your uploaded templates by editing sections, adding custom rules, and adjusting prompts. Learn how to prevent unwanted placeholders, ensure medical-legal safety, and test your changes with mock patients.
+            </div>
+            <a href="edit-template.html" class="tutorial-link">View Tutorial →</a>
+        </div>
+
+        <div class="tutorial-card">
+            <div class="tutorial-title">3. How to Write Documents With Lyrebird</div>
+            <div class="tutorial-description">
+                Generate specialist referrals, letters to allied health professionals, and fillable PDF forms (like medical certificates) directly from your consultation notes. Lyrebird intelligently extracts relevant information for each recipient.
+            </div>
+            <a href="write-documents.html" class="tutorial-link">View Tutorial →</a>
+        </div>
+
+        <div class="tutorial-card">
+            <div class="tutorial-title">4. How to Create a Chronic Condition Management Plan</div>
+            <div class="tutorial-description">
+                Create Medicare-compliant Chronic Condition Management Plans (items 965 and 967) using Lyrebird's Best Practice integration. Automatically populate patient data, medications, and medical history while following structured talking points.
+            </div>
+            <a href="care-plan.html" class="tutorial-link">View Tutorial →</a>
+        </div>
+
+        <div class="footer">
+            <p>Need additional support? Contact the Lyrebird team for assistance.</p>
+        </div>
+    </div>
+</body>
+</html>
