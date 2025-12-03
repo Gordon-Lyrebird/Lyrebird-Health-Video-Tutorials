@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Edit Your Custom Templates in Lyrebird</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .instructions {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        .instructions li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 45px;
+            position: relative;
+        }
+        .instructions li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .note {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .example {
+            background: #f0f0f0;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        .tip {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .video-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Edit Your Custom Templates in Lyrebird</h1>
+        
+        <div class="video-container">
+            <iframe src="https://www.loom.com/embed/aa2175d3b049413fbf7e6c3935372617" allowfullscreen></iframe>
+        </div>
+
+        <h2>Step-by-Step Instructions</h2>
+        
+        <div class="note">
+            <strong>Overview:</strong> After uploading a custom template, you can refine it by editing the sections and rules that Lyrebird has automatically created. This allows you to customize exactly how your notes are structured and what content is included.
+        </div>
+
+        <ol class="instructions">
+            <li>Navigate to your <strong>Note Templates</strong> section and locate your personal template (the one you uploaded previously).</li>
+            
+            <li>Click the <strong>pencil button</strong> (edit icon) next to your template to begin editing.</li>
+            
+            <li>Review the sections and prompts that Lyrebird has automatically created. Read through each section to see if you like the structure and rules it has generated.</li>
+            
+            <li>Identify areas where you want to customize the behavior. For example, if Lyrebird creates a structured summary with bullet points for current medications, social history, family history, and brief summary, you might not want placeholders when these aren't discussed.</li>
+            
+            <li>Add specific instructions to refine the template behavior. For instance, add a prompt like:
+                <div class="example">"If any of these questions are not mentioned and discussed, omit them entirely rather than adding placeholder or no mention notes."</div>
+                This prevents Lyrebird from writing "Current medications: nothing discussed" when the topic isn't covered.</li>
+            
+            <li>Add stylistic preferences to your sections. You can include simple instructions such as:
+                <div class="example">"Use a warm tone throughout."</div>
+                These learnings will be remembered and applied every time you use this template as your default.</li>
+            
+            <li>Review specific sections like "Presenting Problems and Management." Check subsections such as assessment and plan for any problematic default behaviors.</li>
+            
+            <li>Modify prompts for medical-legal safety. For example, if a section says "state the likely diagnosis or clinical impression," change it to:
+                <div class="example">"Do not write the diagnosis or impression unless said by the clinician."</div>
+                This ensures the AI doesn't make suggestions that could have medical-legal implications.</li>
+            
+            <li>Continue through every section, reviewing and adding instructions based on what you value in your clinical documentation.</li>
+            
+            <li>Use <strong>Global Preferences</strong> to add rules that apply to the entire document. Examples include:
+                <div class="example">• Keep notes concise<br>• Use patient's name instead of pronouns<br>• [Add your own preferences]</div></li>
+            
+            <li>Test your template changes using the <strong>mock patient feature</strong> on the right-hand side of the editor. This creates a sample presentation so you can review how your note looks with the new rules applied.</li>
+            
+            <li>If you don't like anything in the mock presentation, go back to the corresponding section and make amendments as needed.</li>
+        </ol>
+        
+        <div class="tip">
+            <strong>Pro Tip:</strong> Play around with your template customization! Each rule you write will be remembered by Lyrebird and consistently applied. Take the time to experiment and test different instructions until your notes match your exact preferences.
+        </div>
+        
+        <div class="note">
+            <strong>Key Benefits:</strong> Template editing allows you to fine-tune exactly how Lyrebird generates your clinical notes. You can prevent unwanted placeholders, ensure medical-legal safety, add stylistic preferences, and create notes that perfectly match your clinical documentation standards.
+        </div>
+    </div>
+</body>
+</html>
