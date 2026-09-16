@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>How to create referral letters using your Best Practice template | Lyrebird</title>
-<meta name="description" content="Generate several specialty specific referral letters from one consultation and save them straight to Correspondence Out in Best Practice." />
+<title>Tutorial library | Lyrebird</title>
+<meta name="description" content="Short video walkthroughs with written steps for Lyrebird key workflows." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -95,6 +95,47 @@ strong{font-weight:600}
   h1{font-size:32px;line-height:40px}
 }
 @media print{.back-link,.video{display:none}body{background:#FFFFFF}}
+
+.library{list-style:none;counter-reset:item;margin:0;padding:0;
+  border-top:1px solid var(--border-subtle)}
+.library>li{counter-increment:item;border-bottom:1px solid var(--border-subtle)}
+.library a{display:grid;grid-template-columns:40px 1fr auto;align-items:baseline;
+  gap:16px;padding:24px 8px;text-decoration:none;color:inherit}
+.library a:hover{background:var(--surface-raised)}
+.library a::before{content:counter(item,decimal-leading-zero);
+  font-family:var(--font-mono);font-size:12px;line-height:24px;
+  color:var(--text-secondary);font-variant-numeric:tabular-nums}
+.library__title{font-size:16px;line-height:24px;font-weight:500;letter-spacing:-.01em}
+.library__desc{display:block;font-size:14px;line-height:20px;font-weight:400;
+  color:var(--text-secondary);margin-top:4px;max-width:62ch}
+.library__go{font-family:var(--font-mono);font-size:12px;line-height:24px;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary);
+  white-space:nowrap}
+.library a:hover .library__go{color:var(--text-primary)}
+.feature{background:var(--colour-white);border:1px solid var(--border-subtle);
+  border-radius:8px;overflow:hidden;margin-bottom:8px}
+.feature a{display:block;text-decoration:none;color:inherit}
+.feature a:hover .feature__title{text-decoration:underline}
+.feature__thumb{position:relative;display:block;padding-bottom:56.25%;height:0;
+  overflow:hidden;background:var(--surface-raised);
+  border-bottom:1px solid var(--border-subtle)}
+.feature__thumb img{position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;display:block}
+.feature__play{position:absolute;left:16px;bottom:16px;
+  width:48px;height:48px;border-radius:999px;background:var(--text-primary);
+  display:flex;align-items:center;justify-content:center}
+.feature a:hover .feature__play{background:#000000}
+.feature__play svg{width:18px;height:18px;margin-left:2px}
+.feature__body{display:block;padding:24px}
+.feature__title{display:block;font-size:16px;line-height:24px;font-weight:500;
+  letter-spacing:-.01em;margin:0 0 4px}
+.feature__body p{font-size:14px;line-height:20px;color:var(--text-secondary);
+  margin:0;max-width:62ch}
+@media(max-width:640px){
+  .library a{grid-template-columns:32px 1fr;gap:12px}
+  .library__go{display:none}
+  .feature__body{padding:16px}
+}
 </style>
 </head>
 <body>
@@ -123,85 +164,100 @@ strong{font-weight:600}
     <span class="masthead__label">Tutorial library</span>
   </div>
 </header>
-
 <main class="page">
 
-  <a class="back-link" href="index.html">&larr; Tutorial library</a>
+  <span class="eyebrow">For clinicians and practice teams</span>
 
-  <span class="eyebrow">Best Practice &middot; Referral letters</span>
-
-  <h1>How to create referral letters using your Best Practice template</h1>
+  <h1>Tutorial library</h1>
 
   <p class="standfirst">
-    Once the consultation is complete, Lyrebird can generate several referral
-    letters at once, each one tailored to the specialist it is addressed to,
-    and save them straight to Correspondence Out in Best Practice.
+    Each tutorial is a short video walkthrough with the written steps beside it.
+    Watch it, or read it, or both.
   </p>
 
-  <div class="video">
-    <iframe
-      src="https://www.loom.com/embed/bf01ee1b86d345f2af3c42aac8a811ca"
-      title="How to create referral letters using your Best Practice template"
-      allowfullscreen loading="lazy"></iframe>
-  </div>
-  <p class="video-caption">Video walkthrough &middot; Loom</p>
-
   <section class="section">
-    <h2>Step by step</h2>
+    <h2>Start here</h2>
 
-    <ol class="steps">
-      <li>Finish the consultation and click <span class="ui">Stop listening</span>.</li>
-      <li>Review the referrals Lyrebird has flagged from the conversation. In a
-          diabetes consultation, for example, that might include a diabetes
-          educator, a dietician, an optometrist and a podiatrist.</li>
-      <li>Click <span class="ui">Write document</span> and search for the
-          referral letter types you need.</li>
-      <li>Click <span class="ui">Create</span>. Every letter you selected is
-          generated at the same time.</li>
-      <li>Review each letter. The clinical detail in each one is written for the
-          specialty it is addressed to.</li>
-      <li>Choose the addressee from your Best Practice contact list or from
-          HealthShare.</li>
-      <li>Attach the relevant investigations, for example pathology or imaging.</li>
-      <li>Click <span class="ui">Save to BP</span>. The letter lands in
-          <span class="ui">Correspondence Out</span>.</li>
-      <li>From Correspondence Out you can review, print, email, share with the
-          patient, or keep editing.</li>
-    </ol>
-
-    <div class="callout">
-      <span class="callout__label">Worth knowing</span>
-      <p>There is no need to copy and paste between systems. Write the referral
-         letters in Lyrebird and send them from Correspondence Out in Best
-         Practice. That saves two to three minutes per letter.</p>
+    <div class="feature">
+      <a href="https://www.youtube.com/watch?v=Mc2xbiLBA3s" target="_blank" rel="noopener">
+        <div class="feature__thumb">
+          <img
+            src="https://i.ytimg.com/vi/Mc2xbiLBA3s/maxresdefault.jpg"
+            onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Mc2xbiLBA3s/hqdefault.jpg'"
+            alt="How to create your first consult note, referral letters and certificates"
+            loading="lazy" />
+          <span class="feature__play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+        </div>
+        <div class="feature__body">
+          <div class="feature__title">How to create your first consult note, referral letters and certificates</div>
+          <p>The full walkthrough, start to finish. If you are new to Lyrebird, watch
+             this one before the rest.</p>
+        </div>
+      </a>
     </div>
+    <p class="video-caption">Opens on YouTube</p>
   </section>
 
   <section class="section">
-    <h2>What this changes</h2>
-    <ul class="list">
-      <li>Several referral letters come out of one consultation, generated together.</li>
-      <li>Each letter is written for the specialty it is addressed to.</li>
-      <li>No copying and pasting between Lyrebird and Best Practice.</li>
-      <li>Addressee details populate from your Best Practice contacts or HealthShare.</li>
-      <li>Letters save directly into Correspondence Out.</li>
-    </ul>
-  </section>
+    <h2>All tutorials</h2>
 
-  <section class="section">
-    <h2>What Lyrebird includes in each letter</h2>
-
-    <div class="callout callout--ai">
-      <span class="callout__label">Drafted from the consultation recording</span>
-      <p>Every letter is a draft. Review it before it goes out.</p>
-    </div>
-
-    <ul class="list">
-      <li>The clinical information relevant to that specialty.</li>
-      <li>Patient demographics.</li>
-      <li>The reason for the referral.</li>
-      <li>The specialist's contact details.</li>
-      <li>Any investigations you attach.</li>
+    <ul class="library">
+      <li>
+        <a href="care-plans.html">
+          <span>
+            <span class="library__title">How to create care plans with Lyrebird</span>
+            <span class="library__desc">A full chronic condition management plan completed inside a normal consultation.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="pbs-authority-scripts.html">
+          <span>
+            <span class="library__title">How to create PBS authority scripts with Lyrebird</span>
+            <span class="library__desc">Request a PBS authority without a separate trip to the PRODA website.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="how-to-import-letterhead-lyrebird.html">
+          <span>
+            <span class="library__title">How to import your letterhead for referral letters</span>
+            <span class="library__desc">Bring your clinic letterhead into Lyrebird so letters go out branded.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="bp-referral-letters.html">
+          <span>
+            <span class="library__title">How to create referral letters using your Best Practice template</span>
+            <span class="library__desc">Generate several specialist referral letters at once from a single consultation.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="upload-template.html">
+          <span>
+            <span class="library__title">How to upload your own note template</span>
+            <span class="library__desc">Build custom note templates from your existing clinical notes.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="lyrebird-integration.html">
+          <span>
+            <span class="library__title">How to integrate Lyrebird into your Best Practice database</span>
+            <span class="library__desc">Set up Lyrebird as a third party integration in Best Practice.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
     </ul>
   </section>
 
