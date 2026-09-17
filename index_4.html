@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>How to upload your own note template | Lyrebird</title>
-<meta name="description" content="Upload a note you already write and Lyrebird will learn your structure, your sections and your rules for each one." />
+<title>Tutorial library | Lyrebird</title>
+<meta name="description" content="Short video walkthroughs with written steps for Lyrebird key workflows." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -95,6 +95,47 @@ strong{font-weight:600}
   h1{font-size:32px;line-height:40px}
 }
 @media print{.back-link,.video{display:none}body{background:#FFFFFF}}
+
+.library{list-style:none;counter-reset:item;margin:0;padding:0;
+  border-top:1px solid var(--border-subtle)}
+.library>li{counter-increment:item;border-bottom:1px solid var(--border-subtle)}
+.library a{display:grid;grid-template-columns:40px 1fr auto;align-items:baseline;
+  gap:16px;padding:24px 8px;text-decoration:none;color:inherit}
+.library a:hover{background:var(--surface-raised)}
+.library a::before{content:counter(item,decimal-leading-zero);
+  font-family:var(--font-mono);font-size:12px;line-height:24px;
+  color:var(--text-secondary);font-variant-numeric:tabular-nums}
+.library__title{font-size:16px;line-height:24px;font-weight:500;letter-spacing:-.01em}
+.library__desc{display:block;font-size:14px;line-height:20px;font-weight:400;
+  color:var(--text-secondary);margin-top:4px;max-width:62ch}
+.library__go{font-family:var(--font-mono);font-size:12px;line-height:24px;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary);
+  white-space:nowrap}
+.library a:hover .library__go{color:var(--text-primary)}
+.feature{background:var(--colour-white);border:1px solid var(--border-subtle);
+  border-radius:8px;overflow:hidden;margin-bottom:8px}
+.feature a{display:block;text-decoration:none;color:inherit}
+.feature a:hover .feature__title{text-decoration:underline}
+.feature__thumb{position:relative;display:block;padding-bottom:56.25%;height:0;
+  overflow:hidden;background:var(--surface-raised);
+  border-bottom:1px solid var(--border-subtle)}
+.feature__thumb img{position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;display:block}
+.feature__play{position:absolute;left:16px;bottom:16px;
+  width:48px;height:48px;border-radius:999px;background:var(--text-primary);
+  display:flex;align-items:center;justify-content:center}
+.feature a:hover .feature__play{background:#000000}
+.feature__play svg{width:18px;height:18px;margin-left:2px}
+.feature__body{display:block;padding:24px}
+.feature__title{display:block;font-size:16px;line-height:24px;font-weight:500;
+  letter-spacing:-.01em;margin:0 0 4px}
+.feature__body p{font-size:14px;line-height:20px;color:var(--text-secondary);
+  margin:0;max-width:62ch}
+@media(max-width:640px){
+  .library a{grid-template-columns:32px 1fr;gap:12px}
+  .library__go{display:none}
+  .feature__body{padding:16px}
+}
 </style>
 </head>
 <body>
@@ -125,127 +166,98 @@ strong{font-weight:600}
 </header>
 <main class="page">
 
-  <a class="back-link" href="index.html">&larr; Tutorial library</a>
+  <span class="eyebrow">For clinicians and practice teams</span>
 
-  <span class="eyebrow">Lyrebird &middot; Note templates</span>
-
-  <h1>How to upload your own note template</h1>
+  <h1>Tutorial library</h1>
 
   <p class="standfirst">
-    New accounts default to Multiple complaints. If you already have a note you
-    like, the one you have been typing for years, upload it and Lyrebird will
-    write in that format instead.
+    Each tutorial is a short video walkthrough with the written steps beside it.
+    Watch it, or read it, or both.
   </p>
 
-  <div class="video">
-    <iframe
-      src="https://www.loom.com/embed/5bb77bb06f8244d498a5c2df840450e2"
-      title="How to upload your own note template"
-      allowfullscreen loading="lazy"></iframe>
-  </div>
-  <p class="video-caption">Video walkthrough &middot; Loom</p>
-
   <section class="section">
-    <h2>Before you upload</h2>
+    <h2>Start here</h2>
 
-    <p class="standfirst" style="margin-bottom:24px">
-      Paste a set of your own notes into a Word document or a PDF. Either format
-      works. The example in the video has a snapshot at the top, numbered
-      issues, a medications section listing only what changed rather than the
-      full list every time, then the rest of the documentation.
-    </p>
-
-    <div class="callout">
-      <span class="callout__label">Take the identifiers out first</span>
-      <p>
-        Remove the patient's name and any other identifiers before you upload.
-        The clinical content can stay.
-      </p>
+    <div class="feature">
+      <a href="https://www.youtube.com/watch?v=Mc2xbiLBA3s" target="_blank" rel="noopener">
+        <div class="feature__thumb">
+          <img
+            src="https://i.ytimg.com/vi/Mc2xbiLBA3s/maxresdefault.jpg"
+            onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Mc2xbiLBA3s/hqdefault.jpg'"
+            alt="How to create your first consult note, referral letters and certificates"
+            loading="lazy" />
+          <span class="feature__play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+        </div>
+        <div class="feature__body">
+          <div class="feature__title">How to create your first consult note, referral letters and certificates</div>
+          <p>The full walkthrough, start to finish. If you are new to Lyrebird, watch
+             this one before the rest.</p>
+        </div>
+      </a>
     </div>
+    <p class="video-caption">Opens on YouTube</p>
   </section>
 
   <section class="section">
-    <h2>Step by step</h2>
+    <h2>All tutorials</h2>
 
-    <ol class="steps">
-      <li>In Lyrebird, press <span class="ui">Customise</span>.</li>
-      <li>Go to <span class="ui">Note templates</span>. This is where the
-          templates that ship with Lyrebird live.</li>
-      <li>Find the <span class="ui">Create a new note template</span> tile and
-          press it.</li>
-      <li>Press <span class="ui">Upload an example</span> and choose your file.</li>
-      <li>Once it has uploaded, press <span class="ui">Generate template</span>
-          at the top.</li>
-      <li>Name the template, then press <span class="ui">Next</span>.</li>
-      <li>Say whether it is for initial consults, reviews, or both. Press
-          <span class="ui">Next</span>.</li>
-      <li>Add a short description, for example "Gordon's GP note". Press
-          <span class="ui">Next</span>.</li>
-      <li>The template lands in your templates, with your sections on the left
-          and a preview on the right.</li>
-    </ol>
-  </section>
-
-  <section class="section">
-    <h2>Tuning the sections</h2>
-
-    <ol class="steps">
-      <li>The left side is every section in order, exactly as your document had
-          them. Relevant background, medications, and so on.</li>
-      <li>The right side is a preview of what a real note will look like once
-          you save.</li>
-      <li>Work the left side first. Click each section and check the instruction
-          Lyrebird has written for it. Add detail where you want it.</li>
-      <li>Anything you write in a section applies to every consult from then on.</li>
-      <li>Press <span class="ui">Generate preview</span> on the right to see the
-          difference between the old note and the new one.</li>
-      <li>Use the advisor at the top to ask for a review. Say what is wrong, for
-          example that presenting problems is too long, and press
-          <span class="ui">Review template</span>. It suggests a change you can
-          apply.</li>
-      <li>Press <span class="ui">Save template</span>.</li>
-      <li>Back on the consult page, choose your template instead of
-          <span class="ui">Multiple complaints</span>.</li>
-    </ol>
-  </section>
-
-  <section class="section">
-    <h2>Writing instructions that work</h2>
-
-    <p class="standfirst" style="margin-bottom:24px">
-      Keep each instruction short and concrete. "Keep this section concise" or
-      "plan in bullets" does the job. Lyrebird reads an instruction the way a
-      person would, so a long vague sentence gets interpreted in ways you did
-      not intend.
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>What Lyrebird builds from your example</h2>
-
-    <div class="callout callout--ai">
-      <span class="callout__label">Generated from the note you uploaded</span>
-      <p>
-        Lyrebird is not copying your headings across. It is writing the rules
-        for how each section gets filled in, and you can change every one of
-        them.
-      </p>
-    </div>
-
-    <ul class="list">
-      <li>Your sections, in your order.</li>
-      <li>A first draft of the instruction for each section.</li>
-      <li>Whether the template is for initial consults, reviews, or both.</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>What this changes</h2>
-    <ul class="list">
-      <li>Notes come out in your format rather than ours.</li>
-      <li>Nothing needs reorganising after the consultation.</li>
-      <li>The setup is one upload and a few edits, not a list of settings.</li>
-      <li>Set it as your default and it applies to every consult.</li>
+    <ul class="library">
+      <li>
+        <a href="care-plans.html">
+          <span>
+            <span class="library__title">How to create care plans with Lyrebird</span>
+            <span class="library__desc">A full chronic condition management plan completed inside a normal consultation.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="pbs-authority-scripts.html">
+          <span>
+            <span class="library__title">How to create PBS authority scripts with Lyrebird</span>
+            <span class="library__desc">Request a PBS authority without a separate trip to the PRODA website.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="how-to-import-letterhead-lyrebird.html">
+          <span>
+            <span class="library__title">How to import your letterhead for referral letters</span>
+            <span class="library__desc">Bring your clinic letterhead into Lyrebird so letters go out branded.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="bp-referral-letters.html">
+          <span>
+            <span class="library__title">How to create referral letters using your Best Practice template</span>
+            <span class="library__desc">Generate several specialist referral letters at once from a single consultation.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="upload-template.html">
+          <span>
+            <span class="library__title">How to upload your own note template</span>
+            <span class="library__desc">Upload a note you already write and Lyrebird learns your structure and your rules.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="lyrebird-integration.html">
+          <span>
+            <span class="library__title">How to integrate Lyrebird into your Best Practice database</span>
+            <span class="library__desc">Set up Lyrebird as a third party integration in Best Practice.</span>
+          </span>
+          <span class="library__go">View &rarr;</span>
+        </a>
+      </li>
     </ul>
   </section>
 
